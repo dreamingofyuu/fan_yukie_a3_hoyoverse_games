@@ -51,6 +51,11 @@ header {
   margin-bottom: 30px;
 }
 
+.games h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+  
 .game img {
   width: 100px;
   height: auto;
@@ -58,6 +63,33 @@ header {
 
 .game p {
   margin: 10px;
+}
+
+/*Discover more*/
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+  width: 75%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
   </style>
 <!-- Content -->
@@ -110,18 +142,25 @@ header {
     </section>
     
   <!-- Other companies -->
+    <h1>Discover Other Games</h1>
+    <div class="row">
+  <div class="column">
     <p><a href="https://dreamingofyuu.github.io/fan_yukie_a3_gamespage_infold/">
     <img src="unnamed.png" alt="InFold Pte. Ltd." width="auto" height="300">
     </a></p>
     <p><a href="https://dreamingofyuu.github.io/fan_yukie_a3_riot_games/">
     <img src="download.png" alt="Riot Games" width="auto" height="300">
     </a></p>
+  </div>
+  <div class="column">
     <p><a href="https://www.w3schools.com">
-    <img src="Mojang-Logo-2013.png" alt="Mojang/Microsoft" width="auto" height="300">
+    <img src="mojang-logo-988A631D5C-seeklogo.com.png" alt="Mojang/Microsoft" width="auto" height="300">
     </a></p>
     <p><a href="https://www.w3schools.com">
     <img src="Electronic-Arts-Logo.svg.png" alt="EA Sports" width="auto" height="300">
     </a></p>
+    </div>
+  </div>
   </main>
 </body>
 </html>
