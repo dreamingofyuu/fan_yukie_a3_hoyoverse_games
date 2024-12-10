@@ -49,7 +49,9 @@ header {
 .games h1 {
   font-family: Lucida Console, monospace;
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  font-size: 50px
 }
   
 .games h2 {
@@ -94,13 +96,38 @@ header {
   width: 75%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+/* Top banner */
+.container {
+  position: relative;
+  text-align: center;
+  border: 10px solid #342166;
+  color: white;
 }
+  
+.container img {
+  opacity: 0.8;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+.bg-text {
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  height: 20%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+}
+  
   </style>
 <!-- Content -->
 <head>
@@ -110,11 +137,13 @@ header {
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
   <!-- Logo that links back to the homepage -->
   <header>
     <a href="https://dreamingofyuu.github.io/fan_yukie_a3/">
       <img src="logo.png" alt="Gamiverse Logo" class="logo">
     </a>
+    
     <!-- Navigation bar -->
     <nav>
        <ul class="nav-bar">
@@ -124,9 +153,18 @@ header {
       </ul>
     </nav>
   </header>
+  
   <!-- Hoyoverse Games -->
   <main class="games">
-    <h1>Hoyoverse Games</h1>
+    
+  <!-- Top banner -->
+    <div class="container">
+    <img src="Genshin-Impact-Lantern-Rite-Festival-event.avif" alt="Genshin Banner" style="width:100%;">
+    <div class="bg-text"><h1>
+      Hoyoverse Games</h1></div>
+  </div>
+
+  <!-- Genshin Impact -->
   <section id="Genshin Impact" class="games">
       <h2>Genshin Impact</h2>
       <img src="Genshin_Impact.webp" alt="Genshin Impact" class="center">
@@ -139,6 +177,7 @@ header {
       <p>Reason: I've been playing Genshin since the release and I've had my fair share of ups and downs. There have been times in which I've stopped playing for months on end. I was first attracted to this game by its beautiful graphics despite it being free to download and play. The storylines, animations, character development, and gameyplay is what allows me to give Genshin such a high rating. This game was my comfort game throughout the years in which COVID had locked me in my room. However much I love the game, I took 0.5 off my rating due to its tedious committment system. As a free-to-play player, I cannot afford to spend copious amounts of money to abtain the characters I want. Thus I need to grind out the game and work for the in-game currency. With academics taking much of my time, I simply could not commit to the game anymore. Nonetheless, I will occasionally get back on the game just to see my favourite characters and participate in some limited time events when I get the chance.</p>
     </section>
     
+    <!-- Honkai Star Rail -->
     <section id="Honkai Star Rail" class="games">
       <h2>Honkai Star Rail</h2>
       <img src="e52da5a31de788599378924f0e639557.png" alt="Honkai Star Rail" class="center">
